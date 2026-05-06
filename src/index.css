@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary : #f305c7;
+    --color-second-primary : #b10591;
+};
+
+.primary-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+}

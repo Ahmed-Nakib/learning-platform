@@ -1,10 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
-// import About from "../pages/About";
-// import Courses from "../pages/Courses";
-// import Login from "../pages/Login";
-// import NotFound from "../pages/NotFound";
+import About from "../components/About";
+import Learn from "../pages/Learn";
+
 
 const AppRouter = () => {
   return (
@@ -12,8 +11,8 @@ const AppRouter = () => {
       {/* Public layout routes */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/courses" element={<Courses />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/learn" element={<Learn />} /> 
       </Route>
 
       {/* Auth route (no header/footer) */}

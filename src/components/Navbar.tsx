@@ -1,29 +1,34 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const linkClass = ({isActive}:any) =>
+     isActive
+     ?  "border-b-2 border-primary text-primary"
+     : "bg-white text-primary"
+
   return (
-    <nav className="bg-white shadow-md px-6 py-4">
+    <nav className="bg-white shadow-md shadow-primary/15 py-4">
       
-      <div className="flex items-center justify-between">
+      <div className="primary-container flex items-center justify-between">
 
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-600">
+        <div className="text-2xl font-bold text-primary">
           Logo
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
-          <Link className="hover:text-blue-600 transition" to="/">Home</Link>
-          <Link className="hover:text-blue-600 transition" to="/about">About</Link>
-          <Link className="hover:text-blue-600 transition" to="/courses">Courses</Link>
+        <div className="hidden md:flex items-center gap-8 text-primary font-medium">
+          <NavLink className={linkClass} to="/">Home</NavLink>
+          <NavLink className={linkClass} to="/about">About</NavLink>
+          <NavLink className={linkClass} to="/learn">Learn</NavLink>
         </div>
 
         {/* Contact Button (Desktop) */}
         <div className="hidden md:block">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+          <button className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-second-primary transition">
             Contact
           </button>
         </div>
