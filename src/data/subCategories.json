@@ -1,0 +1,46 @@
+[
+  {
+    "id": 101,
+    "name": "Hooks",
+    "slug": "hooks",
+    "categoryId": 1
+  },
+  {
+    "id": 102,
+    "name": "Routing",
+    "slug": "routing",
+    "categoryId": 1
+  },
+  {
+    "id": 103,
+    "name": "State Management",
+    "slug": "state-management",
+    "categoryId": 1
+  },
+
+  {
+    "id": 201,
+    "name": "Basics",
+    "slug": "basics",
+    "categoryId": 2
+  },
+  {
+    "id": 202,
+    "name": "Advanced Types",
+    "slug": "advanced-types",
+    "categoryId": 2
+  },
+
+  {
+    "id": 301,
+    "name": "DOM",
+    "slug": "dom",
+    "categoryId": 3
+  },
+  {
+    "id": 302,
+    "name": "ES6",
+    "slug": "es6",
+    "categoryId": 3
+  }
+]

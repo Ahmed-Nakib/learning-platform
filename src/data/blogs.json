@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1001,
+    "title": "useState Hook",
+    "slug": "usestate-hook",
+    "subCategoryId": 101
+  },
+  {
+    "id": 1002,
+    "title": "useEffect Hook",
+    "slug": "useeffect-hook",
+    "subCategoryId": 101
+  },
+  {
+    "id": 1003,
+    "title": "useRef Hook",
+    "slug": "useref-hook",
+    "subCategoryId": 101
+  },
+
+  {
+    "id": 1004,
+    "title": "React Router Setup",
+    "slug": "react-router-setup",
+    "subCategoryId": 102
+  },
+  {
+    "id": 1005,
+    "title": "Dynamic Routes",
+    "slug": "dynamic-routes",
+    "subCategoryId": 102
+  },
+
+  {
+    "id": 1006,
+    "title": "Context API",
+    "slug": "context-api",
+    "subCategoryId": 103
+  },
+  {
+    "id": 1007,
+    "title": "Redux Toolkit",
+    "slug": "redux-toolkit",
+    "subCategoryId": 103
+  },
+
+  {
+    "id": 2001,
+    "title": "TypeScript Introduction",
+    "slug": "typescript-introduction",
+    "subCategoryId": 201
+  },
+  {
+    "id": 2002,
+    "title": "Type Aliases",
+    "slug": "type-aliases",
+    "subCategoryId": 201
+  },
+
+  {
+    "id": 2003,
+    "title": "Generics in TypeScript",
+    "slug": "generics-typescript",
+    "subCategoryId": 202
+  },
+  {
+    "id": 2004,
+    "title": "Utility Types",
+    "slug": "utility-types",
+    "subCategoryId": 202
+  },
+
+  {
+    "id": 3001,
+    "title": "DOM Manipulation",
+    "slug": "dom-manipulation",
+    "subCategoryId": 301
+  },
+  {
+    "id": 3002,
+    "title": "Event Listener",
+    "slug": "event-listener",
+    "subCategoryId": 301
+  },
+
+  {
+    "id": 3003,
+    "title": "Arrow Functions",
+    "slug": "arrow-functions",
+    "subCategoryId": 302
+  },
+  {
+    "id": 3004,
+    "title": "Destructuring",
+    "slug": "destructuring",
+    "subCategoryId": 302
+  }
+]

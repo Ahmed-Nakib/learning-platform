@@ -28,9 +28,11 @@ const Navbar = () => {
 
         {/* Contact Button (Desktop) */}
         <div className="hidden md:block">
-          <button className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-second-primary transition">
+          <Link
+          to={"/contact"}
+          className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-second-primary transition">
             Contact
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Button */}
@@ -50,9 +52,11 @@ const Navbar = () => {
           <Link onClick={() => setOpen(false)} to="/about">About</Link>
           <Link onClick={() => setOpen(false)} to="/courses">Courses</Link>
 
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg w-fit">
+          <Link
+          to={"/contact"}
+           className="bg-blue-600 text-white px-4 py-2 rounded-lg w-fit">
             Contact
-          </button>
+          </Link>
         </div>
       )}
 
