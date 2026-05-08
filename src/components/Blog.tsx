@@ -1,15 +1,32 @@
 import { useParams } from "react-router-dom";
+import categories from "../data/categories.json";
+import subCategories from "../data/subCategories.json";
 import blogs from "../data/blogs.json";
 
-const BlogPage = () => {
-  const { blogSlug } = useParams();
+const Blogs = () => {
 
-  // 1️⃣ blog খুঁজে বের করা
+  const {
+    categorySlug,
+    subCategorySlug,
+    blogSlug
+  } = useParams();
+
+  // category খুঁজে বের করা
+  const category = categories.find(
+    (c) => c.slug === categorySlug
+  );
+
+  // subCategory খুঁজে বের করা
+  const subCategory = subCategories.find(
+    (sub) => sub.slug === subCategorySlug
+  );
+
+  // blog খুঁজে বের করা
   const blog = blogs.find(
     (b) => b.slug === blogSlug
   );
 
-  // 2️⃣ যদি blog না পাওয়া যায়
+  // blog না পেলে
   if (!blog) {
     return (
       <div className="py-10 text-center">
@@ -21,25 +38,30 @@ const BlogPage = () => {
   }
 
   return (
-    <div className="py-10 max-w-3xl mx-auto">
+    <div className="py-10 max-w-3xl mx-auto px-4">
+
+      {/* Category */}
+      <p className="text-sm text-blue-600 font-medium mb-2">
+        {category?.name} / {subCategory?.name}
+      </p>
 
       {/* Title */}
-      <h1 className="text-3xl font-bold mb-3">
-        {blog.title}
+      <h1 className="text-4xl font-bold mb-4">
+        {blog.heading}
       </h1>
 
-      {/* Meta info */}
-      <div className="text-sm text-gray-500 mb-6">
-        <p>Slug: {blog.slug}</p>
-      </div>
+      {/* Meta */}
+      <p className="text-sm text-gray-500 mb-8">
+        Slug: {blog.slug}
+      </p>
 
       {/* Content */}
-      {/* <div className="text-gray-700 leading-7">
-        {blog.content}
-      </div> */}
+      <div className="text-gray-700 leading-8 space-y-4">
+        <p>{blog.content}</p>
+      </div>
 
     </div>
   );
 };
 
-export default BlogPage;
+export default Blogs;

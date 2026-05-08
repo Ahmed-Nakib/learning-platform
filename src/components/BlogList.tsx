@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import categories from "../data/categories.json";
 import subCategories from "../data/subCategories.json";
-import blogs from "../data/blogs.json";
+import blogsList from "../data/blogsList.json";
 
 const BlogList = () => {
 
@@ -18,7 +18,7 @@ const BlogList = () => {
   );
 
   // 3️⃣ ঐ subCategory এর blogs filter করা
-  const filteredBlogs = blogs.filter(
+  const filteredBlogs = blogsList.filter(
     blog => blog.subCategoryId === subCategory?.id
   );
 
@@ -39,7 +39,7 @@ const BlogList = () => {
         {filteredBlogs.map((blog) => (
           <Link
             key={blog.id}
-            to={`/blog/${blog.slug}`}
+            to={`/learn/${categorySlug}/${subCategorySlug}/${blog.slug}`}
             className="p-6 bg-white shadow rounded-xl hover:shadow-lg transition"
           >
 

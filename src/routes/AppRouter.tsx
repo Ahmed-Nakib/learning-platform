@@ -6,7 +6,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import SubCategory from "../components/SubCategory";
 import BlogList from "../components/BlogList";
-import BlogPage from "../components/Blog";
+import Blogs from "../components/Blog";
 
 
 
@@ -37,8 +37,8 @@ const AppRouter = () => {
 
         {/* Single Blog */}
         <Route
-          path="/blog/:blogSlug"
-          element={<BlogPage />}
+           path="/learn/:categorySlug/:subCategorySlug/:blogSlug"
+          element={<Blogs />}
         />
 
         {/* Static pages */}

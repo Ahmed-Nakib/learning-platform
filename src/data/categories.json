@@ -13,5 +13,20 @@
     "id": 3,
     "name": "JavaScript",
     "slug": "javascript"
+  },
+  {
+    "id": 4,
+    "name": "HTML",
+    "slug": "html"
+  },
+  {
+    "id": 5,
+    "name": "Next.js",
+    "slug": "nextjs"
+  },
+  {
+    "id": 6,
+    "name": "Docker",
+    "slug": "docker"
   }
 ]

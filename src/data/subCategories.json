@@ -26,8 +26,14 @@
   },
   {
     "id": 202,
-    "name": "Advanced Types",
-    "slug": "advanced-types",
+    "name": "Intermediate",
+    "slug": "intermediate",
+    "categoryId": 2
+  },
+  {
+    "id": 203,
+    "name": "Advanced",
+    "slug": "advanced",
     "categoryId": 2
   },
 
