@@ -48,5 +48,65 @@
     "name": "ES6",
     "slug": "es6",
     "categoryId": 3
-  }
+  },
+  {
+  "id": 601,
+  "name": "Introduction",
+  "slug": "introduction",
+  "categoryId": 6
+},
+{
+  "id": 602,
+  "name": "Node.js Fundamentals",
+  "slug": "node.js fundamentals",
+  "categoryId": 6
+},
+{
+  "id": 603,
+  "name": "NPM",
+  "slug": "npm",
+  "categoryId": 6
+},
+{
+  "id": 604,
+  "name": "Async JavaScript",
+  "slug": "async-javascript",
+  "categoryId": 6
+},
+{
+  "id": 605,
+  "name": "Express Basics",
+  "slug": "express-basics",
+  "categoryId": 6
+},
+{
+  "id": 606,
+  "name": "Middleware",
+  "slug": "middleware",
+  "categoryId": 6
+},
+{
+  "id": 607,
+  "name": "REST API",
+  "slug": "rest-api",
+  "categoryId": 6
+},
+{
+  "id": 608,
+  "name": "Database",
+  "slug": "database",
+  "categoryId": 6
+},
+{
+  "id": 609,
+  "name": "Authentication",
+  "slug": "authentication",
+  "categoryId": 6
+},
+{
+  "id": 610,
+  "name": "Deployment",
+  "slug": "deployment",
+  "categoryId": 6
+}
 ]
